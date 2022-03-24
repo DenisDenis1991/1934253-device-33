@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -35,6 +36,7 @@
                 <span class="cart-link-count">2</span>
                 <span class="cart-link-text">Корзина</span>
               </a>
+              <!-- Для вывода поповера сменить display:none на display:block -->
               <div class="popover-cart">
                 <div class="popover-content">
                   <ul class="popover-list">
@@ -131,9 +133,9 @@
                   <div class="popular-buttons">
                     <a class="product-link btn" href="#nowhere">Подробнее</a>
                     <div class="popular-toggles">
-                      <button class="toggle toggle-active" type="button"></button>
-                      <button class="toggle" type="button"></button>
-                      <button class="toggle" type="button"></button>
+                      <button class="toggle toggle-active" type="button" aria-label="Превое изображение"></button>
+                      <button class="toggle" type="button" aria-label="Второе изображение"></button>
+                      <button class="toggle" type="button" aria-label="Третье изображение"></button>
                     </div>
                   </div>
                   <table class="product-table">
@@ -167,9 +169,9 @@
                   <div class="popular-buttons">
                       <a class="product-link btn" href="#nowhere">Подробнее</a>
                       <div class="popular-toggles">
-                        <button class="toggle" type="button"></button>
-                        <button class="toggle toggle-active" type="button"></button>
-                        <button class="toggle" type="button"></button>
+                        <button class="toggle toggle-active" type="button" aria-label="Превое изображение"></button>
+                        <button class="toggle" type="button" aria-label="Второе изображение"></button>
+                        <button class="toggle" type="button" aria-label="Третье изображение"></button>
                       </div>
                     </div>  
                   <table class="product-table">
@@ -201,9 +203,9 @@
                   <div class="popular-buttons">
                     <a class="product-link btn" href="#nowhere">Подробнее</a>
                     <div class="popular-toggles">
-                      <button class="toggle" type="button"></button>
-                      <button class="toggle" type="button"></button>
-                      <button class="toggle toggle-active" type="button"></button>
+                      <button class="toggle toggle-active" type="button" aria-label="Превое изображение"></button>
+                      <button class="toggle" type="button" aria-label="Второе изображение"></button>
+                      <button class="toggle" type="button" aria-label="Третье изображение"></button>
                     </div>
                   </div>  
                   <table class="product-table">
@@ -237,7 +239,7 @@
               </a>
             </li>
             <li class="catalog-list-product">
-              <a class="catalog-link" href="#nowhere">
+              <a class="catalog-link" href="monopods.html">
                 <div class="catalog-image">
                   <img class="monopod-img" src="img/catalog/monopod.png" width="85" height="117" alt="Моноподы для селфи">
                 </div>
@@ -425,9 +427,11 @@
         </div>
       </div>
     </footer>
+    <!-- Для вывода модального окна position:fixed -->
     <div class="modal-container">
-      <div class="modal modal-delivery">
-        <button class="modal-close-button">
+      <!-- Для вывода модального окна display:block -->
+      <div class="modal">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -438,34 +442,38 @@
               <label class="name">Ваше имя
               <input class="input-name field" type="text" name="login" placeholder="Введите имя" required>
               <span class="input-text">Добавьте имя</span>
+              <!-- Для вывода сообщения display:block -->
+              <span class="enter-name">Заполните это поле</span>
               </label>
             </p>
            
             <p class="field-group">
               <label class="name">Ваш e-mail
-                <input class="input-email field" type="email" name="email" placeholder="e-mail">
+                <!-- Для реализации состояния ошибки добавить класс .error -->
+                <input class="input-email field" type="email" name="email" placeholder="e-mail" required>
                 <span class="input-text text-valid">Забавный у вас адес </span>
               </label>
             </p>
             
             <p class="field-group">
               <label class="name">Что нужно привезти:
-                <input class="input-description field" type="text" name="description" placeholder="В свободной форме">
+                <input class="input-description field" type="text" name="description" placeholder="В свободной форме" required>
               </label>
             </p>
             <fieldset>
               <legend class="value">Количество
+                <!-- Для вывода поповера сменить display:none на display:block -->
                 <div class="popover-modal">
                   <div class="popover-modal-content">
                     <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
                   </div>
                 </div>
               </legend>
-                <div class="value-container">
-                  <button type="button" class="minus value-btn"></button>
-                  <input type="text" class="total" name="total" value="1">
-                  <button type="button" class="plus value-btn"></button>
-                </div>  
+              <div class="value-container">
+                <button type="button" class="minus value-btn"></button>
+                <input type="text" class="total" name="total" value="1">
+                <button type="button" class="plus value-btn"></button>
+              </div>  
             </fieldset>
             <button type="submit" class="btn form-btn">Отправить </button>
           </form>

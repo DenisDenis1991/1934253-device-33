@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Device catalog</title>
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
@@ -108,7 +109,7 @@
     </div>
     
     <div class="page-wrapper catalog-wrapper">
-        <aside class="catalog-filter filter">
+      <aside class="catalog-filter filter">
           <p class="filter-heading">Фильтр:</p>
           <form action="https://echo.htmlacademy.ru/courses" method="get">
             <fieldset class="filter-block">
@@ -153,7 +154,7 @@
                 </li> 
                 <li class="filter-item">  
                   <label class="choice">
-                    <input class="visually-hidden choice-input" type="checkbox" name="Blue" value="Синий" disabled>
+                    <input class="visually-hidden choice-input" type="checkbox" name="Blue" value="Синий">
                     <span class="choice-mark"></span>
                     <span class="choice-label">Синий</span>
                   </label>
@@ -195,118 +196,118 @@
             </fieldset>   
             <button class="porduct-btn btn" type="submit">Показать</button>
           </form>
-        </aside>
-        <div class="catalog-main">
-          <div class="catalog-sort sorting">
-            <p class="sorting-title">Сортировка:</p>
-            <div class="sorting-select select">
-              <a class="select-active-link select-active-link-passive" href="#popular">Популярное</a>
-            </div>
-            <ul class="sorting-list">
-              <li class="sorting-item">
-                <a class="sorting-link" href="#nowhere" aria-label="Вверx">
-                  <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m6 0 5.5 10H.5" fill="#000"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="sorting-item">
-                <a class="sorting-link" href="#nowhere" aria-label="Вниз">
-                  <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 10 .5 0h11" fill="#000"/>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+      </aside>
+      <div class="catalog-main">
+        <div class="catalog-sort sorting">
+          <p class="sorting-title">Сортировка:</p>
+          <div class="sorting-select select">
+            <a class="select-active-link select-active-link-passive" href="#popular">Популярное</a>
           </div>
-          <div class="selected">
-            <ul class="selected-list">
-              <li class="selected-item">
-                  <!-- Для обозначения нового продукта надо добавить класс  shipment-new -->
-                <a class="shipment shipment-new" href="#nowhere">
-                  <p class="shipment-more">Подробнее</p>
-                  <div class="shipment-container">
-                    <div class="shipment-img">
-                      <img src="img/product/product-1.jpg" width="360" height="380" alt="Любительская селфи палка">
-                    </div>
-                    <div class="shipment-main">
-                      <h3 class="shipment-title">Любительская<br> селфи-палка</h3>
-                      <p class="shipment-description">500 ₽</p>
-                    </div>
-                  </div>  
-                </a> 
-              </li>
-              <li class="selected-item">
-                <a class="shipment" href="#nowhere">
-                  <p class="shipment-more">Подробнее</p>
-                  <div class="shipment-container">
-                    <div class="shipment-img">
-                      <img src="img/product/product-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
-                    </div>
-                    <div class="shipment-main">
-                      <h3 class="shipment-title">Профессиональная селфи-палка</h3>
-                      <p class="shipment-description">1500 ₽</p>
-                    </div>  
-                  </div>
-                </a>
-              </li>
-              <li class="selected-item">
-                <a class="shipment" href="#nowhere">
-                  <p class="shipment-more">Подробнее</p>
-                  <div class="shipment-container">
-                    <div class="shipment-img">
-                      <img src="img/product/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи палка">
-                    </div>
-                    <div class="shipment-main">  
-                      <h3 class="shipment-title">Непотопляемая селфи-палка</h3>
-                      <p class="shipment-description">2500 ₽</p>
-                    </div>
-                  </div>  
-                </a>  
-              </li>
-              <li class="selected-item">
-                <a class="shipment" href="#nowhere">
-                  <p class="shipment-more">Подробнее</p>
-                  <div class="shipment-container">
-                    <div class="shipment-img">
-                      <img src="img/product/product-4.jpg" width="360" height="380" alt="Селфи палка Следуй за мной">
-                    </div>
-                    <div class="shipment-main">  
-                      <h3 class="shipment-title">Селфи-палка «Следуй за мной»</h3>
-                      <p class="shipment-description">1500 ₽</p>
-                    </div>
-                  </div>  
-                </a>
-              </li> 
-            </ul>
-            <button class="catalog-more catalog-more-passive" type="button">Загрузить еще</button>
-            <ul class="catalog-pagination pagination">
-                <li class="pagination-item">
-                  <a class="pagination-btn" href="#back"><span>Назад</span></a>
-                </li>
-                  <ul class="pagination-number">
-                    <li class="pagination-item">
-                      <a class="pagination-link pagination-link-current" href="#1">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#2">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#3">3</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#more">...</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a class="pagination-link" href="#15">15</a>
-                    </li>
-                  </ul> 
-                <li class="pagination-item">
-                  <a class="pagination-btn" href="#nowhere"><span>Вперед</span></a>
-                </li>                           
-            </ul>
-          </div>  
+          <ul class="sorting-list">
+            <li class="sorting-item">
+              <a class="sorting-link" href="#nowhere" aria-label="Вверx">
+                <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m6 0 5.5 10H.5" fill="#000"/>
+                </svg>
+              </a>
+            </li>
+            <li class="sorting-item">
+              <a class="sorting-link" href="#nowhere" aria-label="Вниз">
+                <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 10 .5 0h11" fill="#000"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+        <div class="selected">
+          <ul class="selected-list">
+            <li class="selected-item">
+                <!-- Для обозначения нового продукта надо добавить класс  shipment-new -->
+              <a class="shipment shipment-new" href="#nowhere">
+                <p class="shipment-more">Подробнее</p>
+                <div class="shipment-container">
+                  <div class="shipment-img">
+                    <img src="img/product/product-1.jpg" width="360" height="380" alt="Любительская селфи палка">
+                  </div>
+                  <div class="shipment-main">
+                    <h3 class="shipment-title">Любительская<br> селфи-палка</h3>
+                    <p class="shipment-description">500 ₽</p>
+                  </div>
+                </div>  
+              </a> 
+            </li>
+            <li class="selected-item">
+              <a class="shipment" href="#nowhere">
+                <p class="shipment-more">Подробнее</p>
+                <div class="shipment-container">
+                  <div class="shipment-img">
+                    <img src="img/product/product-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
+                  </div>
+                  <div class="shipment-main">
+                    <h3 class="shipment-title">Профессиональная селфи-палка</h3>
+                    <p class="shipment-description">1500 ₽</p>
+                  </div>  
+                </div>
+              </a>
+            </li>
+            <li class="selected-item">
+              <a class="shipment" href="#nowhere">
+                <p class="shipment-more">Подробнее</p>
+                <div class="shipment-container">
+                  <div class="shipment-img">
+                    <img src="img/product/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи палка">
+                  </div>
+                  <div class="shipment-main">  
+                    <h3 class="shipment-title">Непотопляемая селфи-палка</h3>
+                    <p class="shipment-description">2500 ₽</p>
+                  </div>
+                </div>  
+              </a>  
+            </li>
+            <li class="selected-item">
+              <a class="shipment" href="#nowhere">
+                <p class="shipment-more">Подробнее</p>
+                <div class="shipment-container">
+                  <div class="shipment-img">
+                    <img src="img/product/product-4.jpg" width="360" height="380" alt="Селфи палка Следуй за мной">
+                  </div>
+                  <div class="shipment-main">  
+                    <h3 class="shipment-title">Селфи-палка «Следуй за мной»</h3>
+                    <p class="shipment-description">1500 ₽</p>
+                  </div>
+                </div>  
+              </a>
+            </li> 
+          </ul>
+          <button class="catalog-more catalog-more-passive" type="button">Загрузить еще</button>
+          <ul class="catalog-pagination pagination">
+              <li class="pagination-item">
+                <a class="pagination-btn" href="#back"><span>Назад</span></a>
+              </li>
+                <ul class="pagination-number">
+                  <li class="pagination-item">
+                    <a class="pagination-link pagination-link-current" href="#1">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#2">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#3">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#more">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#15">15</a>
+                  </li>
+                </ul> 
+              <li class="pagination-item">
+                <a class="pagination-btn" href="#nowhere"><span>Вперед</span></a>
+              </li>                           
+            </ul>
+        </div>  
+      </div>
     </div>
     
   </main>

@@ -1664,7 +1664,7 @@ img {
   opacity: 0.1;
 }
 
-fieldset {
+.filter-block {
   margin: 0;
   padding: 0;
   border: none;
